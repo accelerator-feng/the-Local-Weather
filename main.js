@@ -6,7 +6,7 @@ $(function() {
         getWeather(cityname);
     });
 function getWeather(cityname) {
-    $.getJSON("http://v.juhe.cn/weather/index?callback=?", {
+    $.getJSON("https://v.juhe.cn/weather/index?callback=?", {
         "cityname": cityname,
         "dtype": "jsonp",
         "key": "12787276c08fd9a6d9c249a6189f59d9"
