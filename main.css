@@ -3,7 +3,7 @@ body {
     font-family: "Microsoft YaHei", 微软雅黑, Arial, Helvetica, sans-serif, "宋体";
     background-color: #2ca6cb;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .container {
@@ -51,5 +51,5 @@ dl div {
 }
 
 .dressing_advice {
-    text-indent: 36px;
+    text-indent: 40px;
 }
