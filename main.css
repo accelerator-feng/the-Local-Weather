@@ -3,7 +3,7 @@ body {
     font-family: "Microsoft YaHei", 微软雅黑, Arial, Helvetica, sans-serif, "宋体";
     background-color: #2ca6cb;
     color: #fff;
-    
+    font-size: 18px;
 }
 
 .container {
@@ -23,8 +23,7 @@ dt {
 }
 
 dl {
-    width: 29%;
-    margin: 0 79px;
+    width: 35%;
 }
 
 .left {
@@ -45,4 +44,12 @@ dl {
 
 .clearfloat {
     zoom: 1
+}
+
+dl div {
+    overflow: hidden;
+}
+
+.dressing_advice {
+    text-indent: 36px;
 }
