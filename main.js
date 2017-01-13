@@ -6,7 +6,7 @@ $(function() {
         getWeather(cityname);
     });
 function getWeather(cityname) {
-    $.getJSON("http://v.juhe.cn/weather/index?callback=?", {
+    $.getJSON("https://v.juhe.cn/weather/index?callback=?", {
         "cityname": cityname,
         "dtype": "jsonp",
         "key": "12787276c08fd9a6d9c249a6189f59d9"
@@ -15,7 +15,7 @@ function getWeather(cityname) {
         var skArr = [];
         var today = data.result.today;
         var todayArr = [];
-        for (var skPro in sk) { skArr.push(sk[skPro]); }
+        for (var skPro in sk) { skArr.push(sk[skPro]); } 
         $(".temp").text(skArr[0] + "℃");
         $(".wind_direction").text(skArr[1]);
         $(".wind_strengt").text(skArr[2]);
@@ -23,10 +23,11 @@ function getWeather(cityname) {
         $(".time").text(skArr[4]);
         for (var todayPro in today) { todayArr.push(today[todayPro]); }
         $(".temperature").text(todayArr[0]);
-        $(".wind").text(todayArr[3]);
+        $(".wind").text(todayArr[3]); 
         $(".weather").text(todayArr[1]);
         $(".dressing_advice").text(todayArr[8]);
-        $(".date_y").text(todayArr[6]);
+        $("body").show();
     });
+    
 }
 });

@@ -4,41 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>本地天气查询</title>
+    <title>本地天气</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
-    <h1>本地天气查询</h1>
-    <dl>
-        <dt>所在城市：</dt>
-        <dd class="city"></dd>
-        <dt>当前温度：</dt>
-        <dd class="temp"></dd>
-        <dt>当前风向：</dt>
-        <dd class="wind_direction"></dd>
-        <dt>当前风力：</dt>
-        <dd class="wind_strengt"></dd>
-        <dt>当前湿度：</dt>
-        <dd class="humidity"></dd>
-        <dt>更新时间：</dt>
-        <dd class="time"></dd>
-    </dl>
-    <dl>
-        <dt>今日温度：</dt>
-        <dd class="temperature"></dd>
-        <dt>风向风力：</dt>
-        <dd class="wind"></dd>
-        <dt>降水情况：</dt>
-        <dd class="weather"></dd>
-        <dt>穿着建议：</dt>
-        <dd class="dressing_advice"></dd>
-        <dt>日期：</dt>
-        <dd class="date_y"></dd>
-    </dl>
+    <div class="container  clearfloat">
+        <h1>本地天气查询</h1>
+        <dl class="clearfloat left">
+            <dt>所在城市：</dt>
+            <dd class="city"></dd>
+            <dt>当前温度：</dt>
+            <dd class="temp"></dd>
+            <dt>当前风向：</dt>
+            <dd class="wind_direction"></dd>
+            <dt>当前风力：</dt>
+            <dd class="wind_strengt"></dd>
+            <dt>当前湿度：</dt>
+            <dd class="humidity"></dd>
+            <dt>更新时间：</dt>
+            <dd class="time"></dd>
+        </dl>
+        <dl class="clearfloat right">
+            <dt>今日温度：</dt>
+            <dd class="temperature"></dd>
+            <dt>风向风力：</dt>
+            <dd class="wind"></dd>
+            <dt>降水情况：</dt>
+            <dd class="weather"></dd>
+            <dt>穿着建议：</dt>
+            <dd class="dressing_advice"></dd>
+        </dl>
+    </div>
     <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kKC3PPnZc3Fq7xlwGyZfkCuYnGBrGuAL"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=kKC3PPnZc3Fq7xlwGyZfkCuYnGBrGuAL"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 
